@@ -4,17 +4,108 @@
         <!--Coding UTF8-->
         <meta charset="UTF-8">
         <!--Titol de la pagina-->
-        <TITLE> PRÀCTICA 2. HTML/CSS (FLOAT, FLEX, GRID) </TITLE>  
+        <TITLE> PRÀCTICA 2. HTML/CSS (FLOAT, FLEX, GRID) </TITLE>
         <!-- Enllaçar CSS -->
-        <link rel="stylesheet" href=".\css\style.css"> 
-    </head>  
+        <link rel="stylesheet" href=".\css\style.css">
+    </head>
     <body>
         <!-- Header -->
         <header>
-            
+            <nav>
+                <ul class="header-list">
+                    <li><a href="">Nosaltres</a></li>
+                    <li><a href="">Carta</a></li>
+                    <li><a href="">Galeria</a></li>
+                </ul>
+            </nav>
         </header>
-        
+
+        <!-- Banner -->
+        <div id="banner">
+            <img src="img/header.jpg" alt="Example image">
+            <div id="banner-text">
+                <h2>Restaurants</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat dicta error</p>
+            </div>
         </div>
+
+        <!-- Container -->
+        <div id="container">
+
+            <!-- Sobre Nosaltres -->
+            <h1>Sobre Nosaltres</h1>
+            <div class="left-card">
+                <img class="img-card" src="img/nosaltres1.jpg" style="width: 100%" alt="Example image">
+                <div class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sed nisi
+                     porta, viverra sem vitae, mattis elit. Suspendisse quis enim congue est tristique hendrerit.
+                     Aliquam non laoreet dolor.</div>
+            </div> 
+            <div class="right-card">
+                <img src="img/nosaltres2.jpg" style="width: 100%" alt="Example image">
+                <div class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sed nisi
+                    porta, viverra sem vitae, mattis elit. Suspendisse quis enim congue est tristique hendrerit.
+                    Aliquam non laoreet dolor.</div>
+
+            </div>
+
+            <!-- Carta 2 - Grid -->
+            <h1>Carta</h1>
+            <div class="carta-grid">
+                <div class="menu-grid"> <h2>Menu 1</h2></div>
+                <div class="text-grid">
+                    <h3>Contingut</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo arcu tellus, vitae feugiat enim
+                        pharetra vitae. Ut iaculis nunc non elit commodo condimentum. Fusce quis quam magna. Sed gravida,
+                        velit quis lacinia luctus, eros justo mollis dui, et dictum felis lacus id metus. Sed facilisis
+                        sodales lacus vitae laoreet. Sed eros sem, tincidunt sed ante eu, mattis mollis ante. Sed aliquet
+                        leo eu bibendum efficitur.</p>
+                </div>
+                <div class="image-grid1">
+                    <img    src="img/menu_pasta.jpg" alt="Pasta">
+                </div>
+                <div class="image-grid2">
+                    <img src="img/menu_starter.jpg" alt="Starter">
+                </div>
+            </div>
+
+            <!-- Carta 2 - Grid -->
+            <div class="carta-grid">
+                <div class="menu-grid"> <h2>Menu 2</h2></div>
+                <div class="text-grid">
+                    <h3>Contingut</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo arcu tellus, vitae feugiat enim
+                        pharetra vitae. Ut iaculis nunc non elit commodo condimentum. Fusce quis quam magna. Sed gravida,
+                        velit quis lacinia luctus, eros justo mollis dui, et dictum felis lacus id metus. Sed facilisis
+                        sodales lacus vitae laoreet. Sed eros sem, tincidunt sed ante eu, mattis mollis ante. Sed aliquet
+                        leo eu bibendum efficitur.</p>
+                </div>
+                <div class="image-grid1">
+                    <img  src="img/menu_meat.jpg" alt="Meat">
+                </div>
+                <div class="image-grid2">
+                    <img  src="img/menu_fish.jpg" alt="Fish">
+                </div>
+            </div>
+
+            <!-- Flex Images -->
+            <h1>Galeria d'imatges</h1>
+            <div class="flex-images">
+                <img class="flex-image" src="img/img_salad.jpg" alt="Salad">
+                <img class="flex-image" src="img/img_salad.jpg" alt="Salad">
+                <img class="flex-image" src="img/img_salad.jpg" alt="Salad">
+                <img class="flex-image" src="img/img_salad.jpg" alt="Salad">
+            </div>
+            <div class="flex-images">
+                <img class="flex-image" src="img/img_salad.jpg" alt="Salad">
+                <img class="flex-image" src="img/img_salad.jpg" alt="Salad">
+                <img class="flex-image" src="img/img_salad.jpg" alt="Salad">
+                <img class="flex-image" src="img/img_salad.jpg" alt="Salad">
+            </div>
+
+        </div> <!-- /Container -->
+
+        <!-- Footer -->
         <footer>Practica feta per <strong>Joel Díaz</strong></footer>
+
     </body>
 </html>
