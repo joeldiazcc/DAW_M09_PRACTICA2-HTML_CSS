@@ -1,48 +1,123 @@
 body{
-
+    font-family: "Segoe UI";
+    margin:0px;
 }
+
 header{
-
+    background-color: black;
+    padding: 10px;
+    height: 60px;
+    /* Ha d’aparèixer sempre per pantalla a la part superior (inclús quan es baixa l’scroll) */
+    position: sticky;
+    font-size: 1.2rem;
+    z-index: 9999999;
+    top: 0;
+    width: 100%;
 }
-.header-list{
-
+/* Per possar-lo a la dreta */
+.header-list>li {
+    float: right;
+    margin: 0px 20px;
 }
-#banner{
-
+/* Cambiar color del text */
+.header-list a {
+    text-decoration: none;
+    color: white;
+}
+#banner {
+    position: relative;
+}
+#banner>img {
+    width: 100%;
 }
 #banner-text{
-
+    font-size: 1.6rem;
+    position: absolute;
+    left: 30px;
+    top: 10%;
+    color: white;
 }
 #container{
+    margin: 0 auto;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+h1{
+    background-color: darkslateblue;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+.card-left {
+    float: right;
+}
+.img-card{
+    max-height: 200px;
+    max-width: 200px;
+    border-radius: 5px;
+}
+.carta-grid {
+    /* Espacio entre cartas*/
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+}
+
+.menu-grid {
+    grid-area: 1 / 1 / 3 / 2;
+    border: 3px solid lightgray;
+    border-radius: 2px;
+    padding: 10px;
+    margin: 10px;
+    max-height: 300px;
+    line-height: 300px;
+    text-align: center;
 
 }
-.left-card{
-
+.menu-grid>h2 {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
 }
-.right-card{
-
+.text-grid {
+    grid-area: 1 / 2 / 2 / 4;
+    text-align: justify;
 }
-.carta-grid{
-
+.image-grid1, img{
+    grid-area: 2 / 2 / 3 / 3;
+    width: 95%;
 }
-.menu-grid{
-
+.image-grid2, img {
+    grid-area: 2 / 3 / 3 / 4;
+    width: 95%;
 }
-.text-grid{
-
+.image-grid1, .image-grid2{
+    max-height: 300px;
+    max-width: 300px;
+    border-radius: 5px;
 }
-.image-grid1{
-
+.flex-images {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
 }
-.image-grid2{
-    
+.flex-image {
+    margin: 10px;
 }
-.flex-images{
-
+/* Les imatges 1, 4,5 i 8 han de ser més fosques que la resta. */
+.flex-image:first-child {
+    filter: brightness(50%);
 }
-.flex-image{
-    
+.flex-image:last-child {
+    filter: brightness(50%);
 }
-footer{
-    
+footer {
+    background-color: black;
+    padding: 10px;
+    color: white;
+    font-size: 0.8em;
+}
+#img-footer{
+    max-width: 10px;
 }
