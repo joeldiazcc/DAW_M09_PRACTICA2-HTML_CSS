@@ -1,6 +1,8 @@
 body{
-    font-family: "Segoe UI";
     margin:0px;
+}
+main{
+    font-family: "Segoe UI";
 }
 
 header{
@@ -48,8 +50,11 @@ h1{
     padding: 10px;
     text-align: center;
 }
-.card-left {
-    float: right;
+.left-card {
+    display:flex;
+}
+.right-card {
+    display:flex;
 }
 .img-card{
     max-height: 200px;
