@@ -4,7 +4,6 @@ body{
 main{
     font-family: "Segoe UI";
 }
-
 header{
     background-color: black;
     padding: 10px;
@@ -125,4 +124,14 @@ footer {
 }
 #img-footer{
     max-width: 10px;
+}
+@media only screen and (max-width: 576px) {
+    body {
+      margin: 0;
+    }
+}
+@media only screen and (max-width: 768px) {
+    body {
+      margin: 0;
+    }
 }
